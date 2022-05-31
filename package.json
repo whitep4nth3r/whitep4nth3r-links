@@ -1,0 +1,15 @@
+{
+  "name": "whitep4nth3r-links",
+  "version": "0.0.1",
+  "private": true,
+  "author": "whitep4nth3r",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "astro": "^1.0.0-beta.37"
+  }
+}
