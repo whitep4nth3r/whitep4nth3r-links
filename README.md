@@ -1,3 +1,13 @@
+# This is an Astro demo site
+
+This Astro demo site was built with [Ben Holmes](https://twitter.com/BHolmesDev) live on Twitch.
+
+[Watch the highlight of the live stream on YouTube.](https://youtu.be/A3HDN_dPq7k)
+
+Below is the standard README you get with a new Astro project.
+
+___
+
 # Welcome to [Astro](https://astro.build)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/starter)
@@ -20,9 +30,11 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file
+name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact
+components.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
@@ -39,5 +51,5 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
-http://localhost:3000/
+Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our
+[Discord server](https://astro.build/chat). http://localhost:3000/
