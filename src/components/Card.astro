@@ -7,7 +7,7 @@ export interface Props {
 const {href, title, body} = Astro.props;
 ---
 <li class="link__card">
-    <a href={href}>
+    <a href={href} target="_blank" rel="nofollow">
         <h2>
             {title}
             <span>&rarr;</span>
@@ -18,20 +18,11 @@ const {href, title, body} = Astro.props;
     </a>
 </li>
 <style>
-
-	:root {
-		--link-gradient: linear-gradient(45deg, #4F39FA, #DA62C4 30%, var(--color-border) 60%);
-	}
-
 	.link__card {
 		list-style: none;
 		display: flex;
 		padding: 0.15rem;
-		background-image: var(--link-gradient);
-		background-size: 400%;
 		border-radius: 0.5rem;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	.link__card > a {
@@ -40,9 +31,9 @@ const {href, title, body} = Astro.props;
 		line-height: 1.4;
 		padding: 1em 1.3em;
 		border-radius: 0.35rem;
-		color: var(--text-color);
+		color: #000000;
 		background-color: white;
-		opacity: 0.8;
+		border: 0.25rem solid #000000;
 	}
 
 	h2 {
@@ -58,17 +49,5 @@ const {href, title, body} = Astro.props;
 	h2 span {
 		display: inline-block;
 		transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-
-	.link__card:is(:hover, :focus-within) {
-		background-position: 0;
-	}
-
-	.link__card:is(:hover, :focus-within) h2 {
-		color: #4F39FA;
-	}
-
-	.link__card:is(:hover, :focus-within) h2 span {
-		transform: translateX(2px);
 	}
 </style>

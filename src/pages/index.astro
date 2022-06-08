@@ -4,23 +4,25 @@ import Card from "../components/Card.astro";
 import Readme from "../components/Readme.astro";
 import Toggle from "../components/Toggle.svelte";
 ---
-<Layout title="whitep4nth3r.links">
+<Layout title="whitep4nth3r.links — an Astro demo site">
 	<main>
-		<h1>whitep4nth3r.links</h1>
+		<h1>Oh, hai.</h1>
+		<p>This Astro demo site was built with <a href="https://twitter.com/BHolmesDev" target="_blank" rel="nofollow">Ben Holmes</a> live on Twitch.</p>
+		<p><a href="https://youtu.be/A3HDN_dPq7k" target="_blank" rel="nofollow">Watch the highlight of the live stream on YouTube.</a></p>
 			<Toggle client:load show="cards">
 				<ul class="link__card-grid">
           <Card
             href="https://twitch.tv/whitep4nth3r"
             title="Twitch"
-            body="Join the chat whilst I stream building stuff and learning things every week. Come hang out!"
+            body="This is meta, isn't it? Come hang out on Twitch."
           />
           <Card
-            href="https://github.com/whitep4nth3r"
+            href="https://github.com/whitep4nth3r/whitep4nth3r-links"
             title="GitHub"
-            body="Join a growing community of developers who are building stuff, learning things, and helping each other grow through the power of open source software."
+            body="View the source code for this project."
           />
           <Card href="https://tiktok.com/@whitep4nth3r" title="TikTok" body="I make the tiks and the toks." />
-          <Card href="https://twitter.com/whitep4nth3r" title="Twitter" body="Some tweets and things" />
+          <Card href="https://twitter.com/whitep4nth3r" title="Twitter" body="Some tweets and things." />
 				</ul>
 			</Toggle>
 
@@ -37,6 +39,10 @@ import Toggle from "../components/Toggle.svelte";
 
 	h1 {
 		margin: 2rem 0;
+	}
+
+	p {
+		font-size: 1.2rem;
 	}
 
 	main {
@@ -61,21 +67,6 @@ import Toggle from "../components/Toggle.svelte";
 		50% { background-position-y: 80%; }
 	}
 
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4F39FA;
-		padding: 1.0rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
 	.link__card-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));

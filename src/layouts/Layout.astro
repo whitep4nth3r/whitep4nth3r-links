@@ -13,6 +13,7 @@ const { title } = Astro.props as Props;
 	<meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<title>{title}</title>
+  <meta name="description" content="A demo site built live on stream with bholmesdev — watch the stream highlight at https://youtu.be/A3HDN_dPq7k." />
 </head>
 <body>
 	<slot />
@@ -35,6 +36,18 @@ const { title } = Astro.props as Props;
     font-size: var(--font-size-base);
     color: var(--color-text);
     background-color: var(--color-bg);
+  }
+
+  :global(a) {
+    color: #000000;
+  }
+
+  :global(a):focus {
+    outline: transparent;
+    outline-style: solid;
+    box-shadow: #ffffff 0 0 0 0.125rem, #ffb626 0 0 0 0.375rem;
+    transition: box-shadow 0.2s ease-in-out;
+    border-radius: 0.25rem;
   }
 
   body {
