@@ -6,7 +6,9 @@ This Astro demo site was built with [Ben Holmes](https://twitter.com/BHolmesDev)
 
 Below is the standard README you get with a new Astro project.
 
-___
+View the live site [here](https://whitep4nth3r-links.netlify.app/).
+
+---
 
 # Welcome to [Astro](https://astro.build)
 
