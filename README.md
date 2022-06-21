@@ -4,6 +4,8 @@ This Astro demo site was built with [Ben Holmes](https://twitter.com/BHolmesDev)
 
 [Watch the highlight of the live stream on YouTube.](https://youtu.be/A3HDN_dPq7k)
 
+---
+
 Below is the standard README you get with a new Astro project.
 
 View the live site [here](https://whitep4nth3r-links.netlify.app/).
